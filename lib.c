@@ -137,23 +137,6 @@ void ctlGame(unsigned int *snakeLife)
 		changemode(0);
 		usleep(180000);
 		snakeMove(g_dir,snakeLife);
-//		for(int i=0; i<5; i++)
-//		{
-//				if(listHead->pos.row == sFood[i].row && listHead->pos.col == sFood[i].col)
-//				{
-//						insertBody(sFood[i].row,sFood[i].col);
-//						sFood[i].row += ROW * COL;
-//						sFood[i].col += ROW * COL;
-//						nFood = 5;
-//						nFood++;
-//						if((nFood % 5) == 0)
-//						{
-//								initBuff();
-//								initFood();
-//						}
-//						initMap();
-//				}
-//		}
 		if(nFood != 0 && ((nFood % 5) == 0))
 		{
 				nFood = 0;
